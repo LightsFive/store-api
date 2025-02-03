@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: store-api
+  cache:
+    cache-names: product-offers, search-products
+  caffeine:
+    spec: maximumSize=100, expireAfterAccess=60m
+
+server:
+  port: 8085
+
+
